@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+
+    box-sizing: border-box; /*pra quando colocar pad e margin a pag nao ir crescendo infinitamente, é a pag limitada, diminui os itens dentro*/
+    
+    color: #515151;
+    font-style: normal;
+    line-height: normal;
+}
+
+header {
+    margin: 44px 0 144px 76px;  
+    cursor: pointer;
+}
+
+a {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    margin-right: 23px;
+}
+
+#bt-header{
+    width: 130px;
+    height: 41px;
+    flex-shrink: 0;
+    border-radius: 20.5px;
+    background: #665AE1;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+}
+
+
+img {
+    width: 568px;
+    height: 500px;
+    margin: 0 0 0 125px;
+    display: inline-block;
+}
+
+section {
+    display: inline-block;
+    margin: 0 0 125px 125px;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 900;
+    margin: 11px 0 0 0;
+}
+
+h2 {
+    font-size: 58px;
+    font-weight: 500;
+    margin-top: 13px;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 400;
+    width: 515px;
+    margin: 32px 0 65px 0;
+}
+
+#bt-main {
+    width: 239px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background: #ADFF00;
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+    border: none;
+}
+
+@media screen and (max-width:900px) {
+    header{
+        display: none;
+    }
+
+    p {
+        display: none;
+    }
+
+    section {
+        width: 100vw;
+        margin: 0;
+    }
+
+    img{
+        width: max-content;
+        width: 80%;
+        height: 80%;
+        display: block;
+        margin: auto;
+        padding: 30% 0 10% 0;
+    }
+
+    h1{
+        font-size: 50px;
+        text-align: center;
+        margin: 0;
+    }
+
+    h2{
+        font-size: 30px;
+        text-align: center;
+        margin: 0 0 10% 0;
+    }
+
+    #bt-main{
+        font-size: 28px;
+        display: block;
+        margin: auto;
+    }
+}
